@@ -8,9 +8,9 @@ Dado o aray <code>[10, 20, 30, 40, 50, 60, 80, 90, 100]</code>
 
 Como podemos encontrar o elemento 100?
 
-Uma forma de encontrar o elemento 100 seria ir checando cada elemento do array, uma vez que nós tivéssemos passado por cada elemento, poderiamos afirmar, com certeza, se esse elemento existe ou não e sua posição, seu index, que nesse caso é oito. 
+Uma forma de encontrar o elemento 100 seria ir checando cada elemento do array, uma vez que nós tivéssemos passado por cada elemento, poderíamos afirmar, com certeza, se esse elemento existe ou não e sua posição, seu index, que nesse caso é oito. 
 
-Porém, essa é uma forma ineficiente de achar esse elemento, já que teriamos que passar pelo array inteiro para saber se o elemento 100, existe ou não. Executando um total de nove checagens
+Porém, essa é uma forma ineficiente de achar esse elemento, já que teríamos que passar pelo array inteiro para saber se o elemento 100, existe ou não. Executando um total de nove checagens
 
 Sendo assim, usar o Binary Search é mais eficiente.
 </h3>
@@ -49,13 +49,13 @@ Sendo assim, usar o Binary Search é mais eficiente.
 
 <h3>
     
-O que nos interesa é a posição, index, do nosso alvo.
+O que nos interessa é a posição, index, do nosso alvo.
 
 Então vamos pegar o tamanho do array menos um e dividir por dois, não podemos nos esquecer de arredondar o resultado, no nosso caso quando realizarmos essa operação vamos ter como retorno 4, já que a contagem do index do array começa por zero vamos pegar o quinto elemento que é o 50.
 
 Checamos para ver se o 50 é igual ao nosso alvo se for retornamos o index = 4, no entanto, nesse caso 60 não é igual ao alvo, 100, então checamos se 60 é menor ou maior que o alvo. 
 
-Caso fosse menor nós não precisariamos mais incluir os elementos do index 4 para cima, pois como a lista está ordenada, todos esses valores seriam maiores.
+Caso fosse menor nós não precisaríamos mais incluir os elementos do index 4 para cima, pois como a lista está ordenada, todos esses valores seriam maiores.
 
 No nosso caso é menor então podemos ignorar todos os elementos do index 4 para baixo, nós então pegamos o sub-array formado a partir do index 5, e repetimos o processo até encontrarmos o alvo. Usando o index 5 como início da lista.
 </h3>
