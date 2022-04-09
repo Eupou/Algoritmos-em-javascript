@@ -12,7 +12,7 @@
 ### Algoritmos de busca:
 
 <ol>
-    <li><a href="src/search/binary-search">Binary Search</a></li>
+    <li><a href="src/search/binary-search.md">Binary Search</a></li>
 </ol>
 
 
